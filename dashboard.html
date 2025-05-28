@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Y-Center Nepal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dashboard-page">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Y-Center Nepal Logo">
+                    </a>
+                </div>
+                <nav class="main-navigation">
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="y-cafe.html">Y-Cafe & Shops</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="language-switcher">
+                        <a href="#" class="active">EN</a>
+                        <a href="#">NE</a>
+                    </div>
+                    <div class="user-dropdown">
+                        <button class="user-button">
+                            <img src="images/user-avatar.jpg" alt="User Avatar">
+                            <span>Ramesh Poudel</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                            <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+                            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                            <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="dashboard.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-courses.html">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>My Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="course-progress.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Course Progress</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="certificates.html">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificates</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="payments.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Payments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mentorship.html">
+                            <i class="fas fa-users"></i>
+                            <span>Mentorship</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="events.html">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Events</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <i class="fas fa-user"></i>
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="logout">
+                        <a href="index.html">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <div class="dashboard-header">
+                <h1>Welcome, Ramesh!</h1>
+                <p class="last-login">Last login: May 25, 2025, 10:30 AM</p>
+            </div>
+
+            <!-- Dashboard Overview -->
+            <section class="dashboard-overview">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>2</h3>
+                            <p>Active Courses</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>68%</h3>
+                            <p>Overall Progress</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>1</h3>
+                            <p>Certificates</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>3</h3>
+                            <p>Upcoming Events</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Course Progress -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Course Progress</h2>
+                    <a href="my-courses.html" class="view-all">View All Courses <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="courses-progress">
+                    <div class="course-progress-card">
+                        <div class="course-info">
+                            <h3>Full Stack Web Development</h3>
+                            <p class="course-meta">Started: April 10, 2025 | Instructor: Rajan Poudel</p>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;">75%</div>
+                            </div>
+                        </div>
+                        <div class="course-actions">
+                            <a href="course-detail.html" class="btn btn-sm btn-primary">Continue Learning</a>
+                        </div>
+                    </div>
+                    <div class="course-progress-card">
+                        <div class="course-info">
+                            <h3>Digital Marketing Fundamentals</h3>
+                            <p class="course-meta">Started: May 5, 2025 | Instructor: Sabina Gurung</p>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%;">45%</div>
+                            </div>
+                        </div>
+                        <div class="course-actions">
+                            <a href="course-detail.html" class="btn btn-sm btn-primary">Continue Learning</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming Events -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Upcoming Events</h2>
+                    <a href="events.html" class="view-all">View All Events <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="events-list">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">Jun</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Web Development Workshop: Building Modern UIs with React</h3>
+                            <p class="event-time"><i class="far fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Y-Center Nepal, Waling</p>
+                        </div>
+                        <div class="event-actions">
+                            <span class="event-status registered">Registered</span>
+                            <a href="event-detail.html" class="btn btn-sm btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">Jun</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Tech Talk: AI and Machine Learning Opportunities in Nepal</h3>
+                            <p class="event-time"><i class="far fa-clock"></i> 5:30 PM - 7:30 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Y-Center Nepal, Waling</p>
+                        </div>
+                        <div class="event-actions">
+                            <span class="event-status registered">Registered</span>
+                            <a href="event-detail.html" class="btn btn-sm btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">5-7</span>
+                            <span class="month">Jul</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Waling Hackathon 2025: Solving Local Challenges with Technology</h3>
+                            <p class="event-time"><i class="far fa-clock"></i> 48-Hour Event</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Y-Center Nepal, Waling</p>
+                        </div>
+                        <div class="event-actions">
+                            <span class="event-status registered">Registered</span>
+                            <a href="event-detail.html" class="btn btn-sm btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mentorship -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Your Mentorship</h2>
+                    <a href="mentorship.html" class="view-all">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="mentorship-card">
+                    <div class="mentor-info">
+                        <div class="mentor-image">
+                            <img src="images/mentor1.jpg" alt="Rajesh Sharma">
+                        </div>
+                        <div class="mentor-details">
+                            <h3>Your Mentor: Rajesh Sharma</h3>
+                            <p class="mentor-role">Senior Software Engineer, Google</p>
+                            <p class="mentor-bio">With 15+ years of experience in software development, Rajesh specializes in web and mobile technologies.</p>
+                        </div>
+                    </div>
+                    <div class="mentorship-actions">
+                        <div class="next-session">
+                            <h4>Next Session</h4>
+                            <p><i class="far fa-calendar-alt"></i> June 2, 2025</p>
+                            <p><i class="far fa-clock"></i> 4:00 PM - 5:00 PM</p>
+                        </div>
+                        <div class="action-buttons">
+                            <a href="schedule-session.html" class="btn btn-sm btn-primary">Schedule Session</a>
+                            <a href="message-mentor.html" class="btn btn-sm btn-outline">Message</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recommended Courses -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Recommended Courses</h2>
+                    <a href="course-catalog.html" class="view-all">View All Courses <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="recommended-courses">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course1.jpg" alt="Mobile App Development">
+                            <div class="course-category">
+                                <span>Development</span>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Mobile App Development with Flutter</h3>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 14 Weeks</span>
+                                <span><i class="far fa-user"></i> Anil Thapa</span>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-price">Rs. 20,000</span>
+                                <a href="course-detail.html" class="btn btn-sm btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course2.jpg" alt="Data Science">
+                            <div class="course-category">
+                                <span>Data Science</span>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Introduction to Data Science with Python</h3>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 10 Weeks</span>
+                                <span><i class="far fa-user"></i> Priya Adhikari</span>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-price">Rs. 18,000</span>
+                                <a href="course-detail.html" class="btn btn-sm btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course3.jpg" alt="UI/UX Design">
+                            <div class="course-category">
+                                <span>Design</span>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <h3>UI/UX Design Fundamentals</h3>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 8 Weeks</span>
+                                <span><i class="far fa-user"></i> Sunita Gurung</span>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-price">Rs. 15,000</span>
+                                <a href="course-detail.html" class="btn btn-sm btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer dashboard-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Y-Center Nepal. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="help-center.html">Help Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/9779821328051" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Accessibility Tools -->
+    <div class="accessibility-tools">
+        <button class="high-contrast-toggle" aria-label="Toggle high contrast mode">
+            <i class="fas fa-adjust"></i>
+        </button>
+        <div class="text-resize-widget">
+            <button class="text-resize-smaller" aria-label="Decrease text size">A-</button>
+            <button class="text-resize-reset" aria-label="Reset text size">A</button>
+            <button class="text-resize-larger" aria-label="Increase text size">A+</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
