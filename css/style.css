@@ -7,6 +7,7 @@ Y-Center Nepal - Main Stylesheet
     /* Color Variables */
     --deep-blue: #1A365D;
     --teal-green: #2A9D8F;
+    --gold-yellow:#ffcc00;
     --light-blue: #4EA5D9;
     --soft-green: #8BBF9F;
     --vibrant-orange: #F4A261;
@@ -105,35 +106,46 @@ img {
 }
 
 .btn-primary {
-    background-color: var(--teal-green);
+    background-color: var(--gold-yellow);
     color: var(--white);
-    border: 2px solid var(--teal-green);
+    /* color:var(--deep-blue); */
+    border: 2px solid var(--gold-yellow)
 }
 
 .btn-primary:hover {
     background-color: transparent;
-    color: var(--teal-green);
+    color:#000;
 }
 
 .btn-secondary {
-    background-color: var(--deep-blue);
+    background-color: var(--gold-yellow);
     color: var(--white);
-    border: 2px solid var(--deep-blue);
+    border: 2px solid var(--gold-yellow);
 }
 
 .btn-secondary:hover {
     background-color: transparent;
     color: var(--deep-blue);
 }
+.btn-secondary-first{
+    background-color:transparent;
+    color:var(--deep-blue);
+    border: 2px solid var(--gold-yellow);
+}
+
+.btn-secondary-first:hover{
+    background-color:var(--gold-yellow);
+    color:var(--white);
+}
 
 .btn-outline {
     background-color: transparent;
     color: var(--deep-blue);
-    border: 2px solid var(--deep-blue);
+    border: 2px solid var(--gold-yellow);
 }
 
 .btn-outline:hover {
-    background-color: var(--deep-blue);
+    background-color: var(--gold-yellow);
     color: var(--white);
 }
 
@@ -188,7 +200,9 @@ img {
 }
 
 .logo img {
-    height: 50px;
+    height: 40px;
+    margin-top:12px;
+
 }
 
 .main-navigation ul {
@@ -299,6 +313,7 @@ img {
 .hero-image {
     flex: 1;
     text-align: right;
+    height:350px;
 }
 
 .hero-image img {
@@ -620,6 +635,28 @@ img {
     margin: 0 10px 10px;
 }
 
+.btn-primary-CTA{
+    background-color:var(--gold-yellow);
+    color:var(--deep-blue);
+}
+
+.btn-primary-CTA:hover{
+    background-color:transparent;
+    color:var(--white);
+    border:2px solid var(--gold-yellow);
+}
+
+.btn-secondary-CTA{
+    background-color:transparent;
+    color:var(--white);
+    border:2px solid var(--gold-yellow);
+}
+
+.btn-secondary-CTA:hover{
+    background-color:var(--gold-yellow);
+    color:var(--deep-blue);
+    border:2px solid var(--gold-yellow);
+}
 /* Footer */
 .site-footer {
     background-color: var(--dark-gray);
