@@ -181,6 +181,8 @@ img {
     margin-top: 40px;
 }
 
+
+
 /* Header Styles */
 .site-header {
     position: fixed;
@@ -275,6 +277,8 @@ img {
     transition: all 0.3s ease;
 }
 
+
+
 /* Hero Section */
 .hero-section {
     padding: 150px 0 80px;
@@ -322,6 +326,9 @@ img {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+
+
+
 /* Featured Programs */
 .featured-programs {
     padding: var(--section-spacing) 0;
@@ -366,6 +373,12 @@ img {
     color: var(--medium-gray);
 }
 
+
+
+
+
+
+
 /* About Section */
 .about-section {
     padding: var(--section-spacing) 0;
@@ -377,6 +390,20 @@ img {
     align-items: center;
     justify-content: space-between;
 }
+
+.story-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+ 
+}
+
+.story-image img {
+    width: 90%; 
+    height: 750px; 
+    object-fit: cover; 
+} 
 
 .about-content {
     flex: 1;
@@ -401,14 +428,75 @@ img {
     margin-bottom: 15px;
 }
 
-.about-image {
+
+/* .about-image {
     flex: 1;
 }
 
 .about-image img {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+} */
+
+
+
+.team-member {
+    display: flex; 
+    align-items: center;
+    text-align: justify;
+    gap: 20px; 
+    max-width: 800px;
+    margin: auto;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
 }
+
+.member-image {
+    flex-shrink: 0; 
+    width: 150px; 
+}
+
+.member-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info {
+    flex: 1; 
+    min-width: 250px;
+}
+
+.founder-section {
+    text-align: left; 
+    position: relative;
+}
+
+.founder-image {
+    display: block;
+    width: 180px;
+    margin-top: 20px; 
+}
+
+
+/* Responsive adjustments */
+/* @media (max-width: 600px) {
+    .team-member {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .member-image {
+        width: 120px; 
+    }
+
+    .member-image img {
+        width: 120px;
+        height: 120px;
+    }
+}   */
+
 
 /* Impact Stats */
 .impact-stats {
