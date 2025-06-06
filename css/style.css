@@ -5,11 +5,12 @@ Y-Center Nepal - Main Stylesheet
 /* Base Styles */
 :root {
     /* Color Variables */
-    --deep-blue: #1A365D;
+    --gold-yellow:#ffcc00;
     --teal-green: #2A9D8F;
     --gold-yellow:#ffcc00;
     --light-blue: #4EA5D9;
     --soft-green: #8BBF9F;
+    --gold-yellow:#ffcc00;
     --vibrant-orange: #F4A261;
     --warm-yellow: #E9C46A;
     --dark-gray: #333333;
@@ -30,6 +31,7 @@ Y-Center Nepal - Main Stylesheet
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html {
@@ -42,6 +44,7 @@ body {
     line-height: 1.6;
     color: var(--dark-gray);
     background-color: var(--white);
+    margin-top: 100px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -108,13 +111,17 @@ img {
 .btn-primary {
     background-color: var(--gold-yellow);
     color: var(--white);
+
     /* color:var(--deep-blue); */
     border: 2px solid var(--gold-yellow)
+
 }
 
 .btn-primary:hover {
     background-color: transparent;
+    color: var(--dark-gray);
     color:#000;
+
 }
 
 .btn-secondary {
@@ -168,7 +175,7 @@ img {
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background-color: var(--teal-green);
+    background-color: var(--gold-yellow);
 }
 
 .section-header p {
@@ -230,7 +237,7 @@ img {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--teal-green);
+    background-color: var(--gold-yellow);
     transition: width 0.3s ease;
 }
 
@@ -355,8 +362,13 @@ img {
 
 .program-image img {
     width: 100%;
-    height: 200px;
+    height: 800px;
     object-fit: cover;
+    display: flexbox;
+    flex:1;
+    border: 2px solid;
+    flex-wrap: wrap;
+    border-radius: 20px;
 }
 
 .program-content {
@@ -774,7 +786,7 @@ img {
     left: 0;
     width: 50px;
     height: 2px;
-    background-color: var(--teal-green);
+    background-color: var(--gold-yellow);
 }
 
 .footer-logo {
@@ -830,6 +842,7 @@ img {
 
 .contact-info {
     list-style: none;
+   
 }
 
 .contact-info li {
@@ -840,7 +853,7 @@ img {
 
 .contact-info li i {
     margin-right: 10px;
-    color: var(--teal-green);
+    color: var(--gold-yellow);
 }
 
 .newsletter {
@@ -1102,4 +1115,12 @@ img {
     .cta-buttons .btn {
         margin-right: 0;
     }
+}
+.course-price{
+   background-color:var(--deep-blue);
+   
+    
+}
+.program-category{
+    color: var(--gold-yellow)
 }
